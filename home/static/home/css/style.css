@@ -1,0 +1,481 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+html {
+    font-family:Trebuchet, sans-serif,Didact Gothic,Railway,Myriad Pro;
+  }
+
+ h6,p,span{
+ 	font-family: 'Didact Gothic', sans-serif;
+ 	font-weight: Medium;
+ }
+ h1,h2,h3,li,h4
+ {
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bold;
+
+ }
+ .paddingclear
+ {
+  padding:0 0 0 0;
+ }
+
+ blockquote{
+color: #04597A;
+ }
+
+
+  /* start home */        
+#home
+	{
+      padding-top: 65px;
+	}
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  padding: 0;
+  position: relative;
+  zoom: 1;
+  background-color: white;
+  overflow: hidden;
+  margin: 0;
+}
+.flexslider .slides {
+  padding: 0;
+  zoom: 1;
+}
+.flexslider .slides img {
+  width: 100%;
+  min-width: 648px;
+  min-height: 270px;
+  display: block;
+}
+.flexslider .slides > li {
+  display: none;  
+  padding: 0;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider img {
+  position: relative;
+  width: 100%;
+}
+.slider-caption {
+  color:white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexslider .btn
+{
+    background: #0DB2C9;
+    border-radius: 0;
+    border: 2px solid transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    height: 50px;
+    width: 250px;
+    padding: 12px 10px 10px 10px;
+}
+.flexslider .btn:hover,
+.flexslider .btn:focus {
+    background: #fff;
+    color: #0DB2C9;
+    border: 2px solid transparent;
+}
+
+/* end home */
+/* start contact */
+#contact
+    {
+       /* background-image: url(../images/contact-bg.jpg);
+        
+  
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;*/
+       
+        
+    }
+#contact h3
+    {
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+#contact .fa
+    {
+        color: #04597A;
+        font-size: 18px;
+        padding-bottom: 14px;
+    }
+#contact .form-control
+    {
+        background: #04597A;
+        border-radius: 4px;
+        box-shadow: none;
+        margin-bottom: 20px;
+        transition: all 0.4s ease-in-out;
+    }
+#contact input
+    {
+        height: 300px;
+    }
+#contact input[type="submit"]
+    {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 80px;
+    }
+#contact input[type="submit"]:hover
+    {
+        background: black;
+    }
+ #contact .form-control::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+#contact .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+#contact .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+/* end contact */
+.make-pink
+{
+    background-color:#04597A;
+}
+.make-blue
+{
+    background-color:#39b4e0;
+}
+.make-white
+{
+    background-color:#f5f6f8;
+}
+.blur-white
+{
+    background-color:#f5f6f8;
+    opacity: transparent;
+}
+.make-blue-text
+{
+	color: #39b4e0;
+}
+.make-pink-text
+{
+	color:#04597A;
+}
+.make-white-text
+{
+	color: #f5f6f8;
+}
+.make-header
+{
+	font-size: 40px;
+}
+.tall
+{
+	height: 300px;
+}
+.research-bg
+{
+	background-image: url("../images/researchbg.jpg");
+	background-repeat: no-repeat;
+    
+    
+
+}
+.news-bg
+{
+  background-image: url("../images/background3.jpg");
+  background-repeat: repeat;
+  width: 100%;
+    
+
+}
+.slider-bg
+{
+  background-image: url("../images/background1.jpg");
+background-repeat: repeat;
+  width: 100%;
+
+
+}
+.news-banner
+{
+  background-image: url("../images/banner-DSL-01.png");
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  
+
+    
+    
+
+}
+.research-banner
+{
+  background-image: url("../images/research-banner-01.png");
+  background-repeat: ;
+  height: 200px;
+  width: 100%;
+
+    
+    
+
+}
+.contact-banner
+{
+  background-image: url("../images/contact-banner-01.png");
+  background-repeat: ;
+  height: 200px;
+  width: 100%;
+
+    
+    
+
+}
+.team-banner-2
+{
+  background-image: url("../images/team-banner-01.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+
+    
+    
+
+}
+
+
+.featured-bg
+{
+	background-image: url("../images/featured.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+    
+    
+}
+
+#facebook
+{
+	background-image: url("../images/facebook.png");
+	
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.contact-bg
+{
+	background-image: url("../images/contact-bg-2.jpg");
+	background-repeat: no-repeat;
+   
+   background-size: cover;
+    object-fit: contain;
+}
+.lab-img
+{
+  max-width: 50%;
+    max-width: 50%;
+    object-fit: contain;
+}
+.lab-bg
+{
+	background-image: url("../images/lab-bg.jpg");
+	
+  background-size: cover;
+    
+    
+
+}
+.nav-strip
+{
+  background-image: url("../images/nav-strip.png");
+  width: 100%;
+  background-size: cover;
+    
+    
+
+}
+.team-banner
+{
+	background-image: url("../images/team-banner.jpg");
+	background-repeat:no-repeat;
+
+   height: 900px;
+   width: 674px;
+
+}
+.research-info{
+  background-image: url("../images/research-info.jpg");
+  background-size: cover;
+  
+}
+#contactus:hover,#team2:hover,#research:hover,#news:hover,#home2:hover,#article:hover,#events:hover,#updates:hover,#news-2:hover,#drop-arrow:hover
+{
+  background-color: #04597A;
+  color: #f5f6f8; 
+}
+.dropdown-content
+{
+  color:#04597A  !important; 
+}
+img.news-banner
+{
+  
+  width: 100px;
+  height: 100px;
+  left: 0;
+}
+
+
+.nav{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:140px;
+    background: RGBA(0,0,0,0.7);
+    z-index:2;  //important to get the navigation over all other contents.
+}
+
+@media (max-width: 990px) {
+  .resizeimg {
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .resizeimg {
+    width: auto;
+    height: 350px;
+  }
+}
+.card
+{
+  background-color: #04597A;
+   height: 100%;
+}
+.card.medium.card-image{
+  max-height: 100%;
+}
+.team-container {
+  position: relative;
+  margin-top: 20px;
+  width: 500px;
+  height: 400px;
+}
+img.lab-banner,img.team-banner {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.team-container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .4);
+}
+
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.team-container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.team-container:hover .button {
+  opacity: 1;
+}
+news-card.card.medium {
+  height: auto;
+}
+news-card.card.medium .card-content {
+  height: auto;
+}
+news-card.card.medium .card-action {
+  position: relative;
+}
+#sidenav-overlay {
+  z-index: 1
+}
+.footerimage{
+background-image: url("../images/1.jpg");
+}

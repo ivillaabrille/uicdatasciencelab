@@ -1,0 +1,41 @@
+{% extends 'home/base.html' %}
+{% block title %}News And Updates{% endblock %}
+{% load staticfiles %}
+{% block body %}
+  <br><br><br><br><br><br><br>
+    <!-- start news -->
+    <div class="col s12 m12 l12  valign-wrapper news-banner" style="height: 200px;width: 100%;">
+        <h1 class="make-white-text center-align" style="margin-left: 100px;">News and Updates</h1>
+    </div>
+
+     <div class="row container">
+
+
+    {% if all_newsandupdate %}
+            {% for newsandupdate in all_newsandupdate %}
+         <div class="col s12 m4 l4">
+            <div class="card  medium" id="news-card">
+              <div class="card-image">
+            <img src="{{ newsandupdate.NU_Logo.url }}" width="200" height="200">
+            <span class="card-title" style="text-shadow: 2px 2px #04597A;"><b><i><u>{{ newsandupdate.NU_Title }}</u></i></b></span>
+              </div>
+            <div class="card-content white-text">
+              <p class="container"><b>{{ newsandupdate.NU_Category }} posted on {{ newsandupdate.NU_Posted }}.</b> <br>{{ newsandupdate.NU_Content|safe|slice:":143" }}...</p>
+            </div>
+            <div class="card-action">
+              <a href="{% url 'home:newsdetail' newsandupdate.id %}">Read More</a>
+
+            </div>
+          </div>
+
+        </div>
+            {% endfor %}
+    {% else %}
+        <h3>We don't have any News and or Updates as of now...</h3>
+    {% endif %}
+
+      </div>
+    <!-- end news -->
+
+{% endblock %}
+

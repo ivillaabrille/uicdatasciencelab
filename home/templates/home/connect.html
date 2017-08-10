@@ -1,0 +1,72 @@
+{% extends 'home/base.html' %}
+{% block title %}Connect With Us{% endblock %}
+{% load staticfiles %}
+{% block body %}
+  <br><br><br><br><br><br><br>
+<!-- start contact -->
+    <div class="col s12 valign-wrapper contact-banner" style="height: 200px;width: 100%;">
+        <h1 class="make-white-text center-align" style="margin-left: 100px;">Contact</h1>
+    </div>
+  <br><br>
+
+    <!-- start contact -->
+
+      <div  class="container">
+
+        <div class="row">
+          <div class="col s12 m12 l12 center-align">
+        <span class="make-blue-text make-header" >Talk to</span>
+
+        <span class="make-header make-pink-text">us</span>
+
+        <h6 class="container blue-grey-text text-darken-4" >We'd love to hear it from you
+         </h6>
+         <br><br>
+        </div>
+
+      <div class="col s12 contact-bg">
+        <div class="col s12 offset-s2 wow fadeInLeft" data-wow-delay="0.6s">
+            <h2 class="make-white-text"><strong class="make-white-text">UIC</strong> Data Science Laboratory</h2>
+
+
+          </div>
+
+          <div class="col s12 " >
+          <form action="{% url 'home:connect' %}" method="post" class="" id="contact-form" role="form">
+              {% csrf_token %}
+              <div class="col s12     wow fadeIn" data-wow-delay="0.3s">
+                <input name="{{ form.M_Name.name }}" type="text" class="form-control " id="id_{{ form.M_Name.name }}" placeholder="Name">
+                  <label for="id_{{ form.M_Name.name }}">{{ form.M_Name.label }}</label>
+              </div>
+              <div class="col s12    wow fadeIn" data-wow-delay="0.3s">
+                <input name="{{ form.M_Email.name }}" type="email" class="form-control" id="id_{{ form.M_Email.name }}" placeholder="Email">
+                  <label for="id_{{ form.M_Email.name }}">{{ form.M_Email.label }}</label>
+              </div>
+              <div class="col s12   wow fadeIn" data-wow-delay="0.9s" >
+                <textarea name="{{ form.M_Message.name }}"   class="form-control" id="id_{{ form.M_Message.name }}" placeholder="Message"   ></textarea>
+                  <label for="id_{{ form.M_Message.name }}">{{ form.M_Message.label }}</label>
+              </div>
+
+              <div class="col s6  wow fadeIn" data-wow-delay="0.3s" style="padding-bottom: 40px;">
+              <br><br>
+               <button class="btn waves-effect waves-light make-pink" type="submit" name="action" >Submit
+                   <i class="material-icons right make-white-text">send</i>
+                        </button>
+              </div>
+          </form>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <!-- end contact -->
+{% endblock %}
+
+<!--
+{% load wysiwyg %}
+{% wysiwyg_setup %}
+
+<textarea id="foo"></textarea>
+
+{% wysiwyg_editor "foo" %}
+-->

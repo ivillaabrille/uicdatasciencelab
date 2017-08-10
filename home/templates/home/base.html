@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>{% block title %}UIC Data Science Laboratory{% endblock %}</title>
+<!-- Loads the path to your static files -->
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/materialize.css' %}" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
+  <!-- custom -->
+
+
+   <!-- animate -->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="{% static 'home/css/animate.min.css' %}">
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="{% static 'home/css/font-awesome.min.css' %}">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="{% static 'home/css/font-awesome.min.css' %}">
+       <!-- favicon -->
+     <link rel="icon" type="image/png" href="{% static 'home/images/favicon.png' %}">
+
+
+
+
+
+  <!--  Scripts-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="{% static 'home/js/materialize.min.js' %}"></script>
+
+      <script type="text/javascript">
+
+        $(document).ready(function () {
+    // Plugin initialization
+    $('.slider').slider({full_width:false,indicators:true,height:700,transition:300,interval:6000});
+        })
+
+
+
+        $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+       $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+      </script>
+
+  <script src="{% static 'home/js/init.js' %}"></script>
+
+
+  <!-- wow -->
+    <script src="{% static 'home/js/wow.min.js' %}"></script>
+    <!-- smoothScroll -->
+    <script src="{% static 'home/js/smoothscroll.js' %}"></script>
+    <!--fadeout-->
+     <script src="{% static 'home/js/fadeout.js' %}"></script>
+
+
+
+
+
+</head>
+
+<body  data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<div style="position:absolute;z-index: 5;width: 100%;padding-top:0;">
+  <nav class="nav-strip transparent z-depth-0 " role="navigation" style="height: 140px;">
+    <div class="nav-wrapper" style="margin-left: 30px;">
+    <a id="logo-container" href="{% url 'home:index' %}" class="brand-logo "><img id="logo" src="{% static 'home/images/logo-new.png' %}" class="responsive-img" style="max-height:90%;max-width: 90%;"></a>
+    <!--   Navbar Section   -->
+
+   <div class="row"  style="margin-right:120px;">
+      <div class="col s12 m12 l12 " style="margin-top: 40px;">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'home:connect' %}" class="make-pink-text" id="contactus"  style="font-size:20px;font-weight:normal;">Connect with us</a></li>
+      </ul>
+       <ul class="right hide-on-med-and-down ">
+        <li><a href="{% url 'home:team' %}" class="make-pink-text" id="team2"  style="font-size:20px;font-weight:normal;">What we do</a></li>
+      </ul>
+       <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'home:research' %}" class=" make-pink-text" id="research"  style="font-size:20px;font-weight:normal;">Our work</a></li>
+      </ul>
+       <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'home:news' %}" class=" make-pink-text dropdown-button" id="news" style="font-size:20px;font-weight:normal;">News and updates</a></li>
+      </ul>
+
+      </div>
+
+  </div>
+
+
+   <!--   Sidebar Section   -->
+    <div class="container">
+      <ul id="nav-mobile" class="side-nav container sidenav-overlay">
+      <li><a href="{% url 'home:index' %}">Home</a></li>
+        <li><a href="{% url 'home:news' %}">News and Updates</a></li>
+          <li><a href="{% url 'home:research' %}">Our Work</a></li>
+            <li><a href="{% url 'home:team' %}">What we do</a></li>
+              <li><a href="{% url 'home:connect' %}">Connect with us</a></li>
+      </ul>
+
+       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons make-pink-text">menu</i></a>
+    </div>
+    <!--   End Sidebar Section   -->
+
+
+
+</div>
+  </nav>
+  </div>
+  <!--   End Navbar Section   -->
+{% block body %}
+{% endblock %}
+
+<!--footer-->
+   <div class="section make-pink-text" style="margin-top:90px; background-color:#F8F8F8">
+      <div class="row ">
+      <div class="row left container" style="margin-left:30px;">
+
+      <div class="col s12 m12 l6 left">
+                <div class="col s10 make-white-text">
+           <h3 style="font-family: Arial;font-weight: bold;font-size: 25px;" class="make-pink-text">Contact</h3>
+
+          <h5 style="font-size: 15px;font-family: Arial;" class="make-pink-text"><a href="https://www.facebook.com/uicdatascience/">datascience@uic.edu.ph</a></h5><br>
+
+
+      <p class="make-pink-text">2nd Floor, Immaculate Conception Bldg.<br>University of the Immacualte Conception<br>Fr. Selga Street, Davao City</p>
+
+                    </div>
+          <div class="col s2 pull-s1">
+           <h3 style="font-family: Arial;font-weight: bold;font-size: 25px;" class="make-pink-text">Follow</h3>
+                <div class="col s6 " >
+          <span style=""><a href="https://www.facebook.com/uicdatascience/"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a></span>
+          </div>
+          <div class="col s6  ">
+                    <span><a href="https://www.twitter.com/ayesahyah/"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></span>
+          </div>
+          </div>
+ </div>
+
+
+      <div class="col s6 push-s6" style="margin-top:35px">
+          <div class="col s6 push-s2">
+        <img src="{% static 'home/images/uicnewlogo.png' %}" style="height:160px; width:190px">
+              </div>
+                    <div class="col s6">
+          <img src="{% static 'home/images/dallogo.png' %}" style="height:155px; width:155px">
+                    </div>
+      </div>
+
+
+     </div>
+    </div>
+    </div>
+    <footer class="page-footer make-pink" style="height: 70px;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12 pull-l2  ">
+                <span class="white-text" style="margin-right: 4px;"><a href="{% url 'home:news' %}" class="make-white-text">News and Updates |
+                </a></span>
+                 <span class="white-text" style="margin-right: 4px;"><a href="{% url 'home:research' %}" class="make-white-text">Our Work |</a></span>
+                  <span class="white-text" style="margin-right: 4px;"><a href="{% url 'home:team' %}" class="make-white-text">What we do |</a></span>
+                   <span class="white-text" ><a href="{% url 'home:connect' %}" class="make-white-text">Connect with Us</a></span>
+
+              </div>
+              <div class="col l4 offset-l2 s12 push-l2">
+                 <span class="make-white-text">Copyright <a class="make-white-text" href="">UIC Data Science Laboratory 2017</a></span>
+              </div>
+            </div>
+          </div>
+
+        </footer>
+
+    <!-- end footer -->
+</body>
+</html>
